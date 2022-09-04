@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RutaEntradaComponent } from './rutas/ruta-entrada/ruta-entrada.component';
 import { RutaSalidaComponent } from './rutas/ruta-salida/ruta-salida.component';
+import {FooterModule} from "./Componentes/footer/footer.module";
+import {HeaderModule} from "./Componentes/header/header.module";
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { RutaSalidaComponent } from './rutas/ruta-salida/ruta-salida.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FooterModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
