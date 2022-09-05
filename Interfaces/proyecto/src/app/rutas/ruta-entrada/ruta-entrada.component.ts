@@ -25,4 +25,21 @@ export class RutaEntradaComponent implements OnInit {
 
   checked = false;
 
+  requisitosDenuncias: string[] = [
+    'Apellidos y Nombres',
+    'Número de cédula',
+    'Correo electrónicos',
+    'Número de teléfono (celular o convencional)',
+    'Fecha exacta de ingreso y salida del trabajo'
+  ];
+
+  datosEmpleador: string[] = [
+    'Nombre de la empresa denunciada/ Apellidos y Nombres (persona natural)',
+    'Nombre del representante legal (empresa)',
+    'Número de Ruc si es empresa o Número de cédula si es personal natural',
+    'Dirección exacta con referencia y nomenclatura (Ej.: Clemente Ponce E20-53 y Piedrahita, atrás de las     Asamblea Nacional)',
+    'En caso de no haber nomenclatura actual adjuntar fotografía del lugar.',
+    'Croquis en una hoja del lugar de notificación.'
+  ]
+
 }
