@@ -7,7 +7,11 @@ import { RutaEntradaComponent } from './rutas/ruta-entrada/ruta-entrada.componen
 import { RutaSalidaComponent } from './rutas/ruta-salida/ruta-salida.component';
 import {FooterModule} from "./Componentes/footer/footer.module";
 import {HeaderModule} from "./Componentes/header/header.module";
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatCheckboxModule} from '@angular/material/checkbox'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +22,12 @@ import {HeaderModule} from "./Componentes/header/header.module";
     BrowserModule,
     AppRoutingModule,
     FooterModule,
-    HeaderModule
+    HeaderModule,
+    NoopAnimationsModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
