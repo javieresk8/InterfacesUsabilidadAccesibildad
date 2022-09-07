@@ -9,54 +9,7 @@
 </head>
 <body>
 <header>
-  <div class="header_principal">
-    <div class="logo_gobierno">
-      <img [src]=logo_gobierno_encuentro>
-    </div>
-    <div class="ministerio_trabajo">
-      <h2><b>MINISTERIO DEL TRABAJO</b></h2>
-    </div>
-    <div class="logo_bicentenario">
-      <img [src]=logo_bicentenario alt="logo de representación del bicentenario del Ecuador" title="logo del bicentenario del Ecuador">
-    </div>
-    <div class="menu_hamburguesa">
-      <button  class="btn"  mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item routerLink="">
-          <mat-icon>home</mat-icon>
-          <span>Home</span>
-        </button>
-        <button mat-menu-item routerLink="entrada">
-          <mat-icon>input</mat-icon>
-          <span>Entrada</span>
-        </button>
-        <button mat-menu-item routerLink="salida">
-          <mat-icon>output</mat-icon>
-          <span>Salida</span>
-        </button>
-        <router-outlet></router-outlet>
-      </mat-menu>
-    </div>
-    <div class="informacion_ministerio_trabajo">
-      <ul class="lista_tramites">
-        <li>
-          <a href="https://www.trabajo.gob.ec/sistema-contacto-ciudadano-mantenimiento/"><b>Contacto Ciudadano</b></a>
-        </li>
-        <li>
-          <a href="https://www.gob.ec/"><b>Portal Trámites Ciudadanos</b></a>
-        </li>
-        <li>
-          <a href="https://sni.gob.ec/inicio"><b>Sistema Nacional de Información (SNI)</b></a>
-        </li>
-      </ul>
-    </div>
-    <div class="buscar_noticias">
-      <label>Buscar:<input type="text" class="input_buscar" id="fname" name="buscar" placeholder="Noticia"></label>
-      <input type="submit" value="Buscar">
-    </div>
-  </div>
+  <app-header></app-header>
 </header>
 <main>
   <div class="contenido_principal">
@@ -119,33 +72,7 @@
 
 </main>
 <footer>
-  <div class="footer_principal">
-    <div class="gobierno_nacional">
-      <p><b>GOBIERNO DE LA REPÚBLICA DEL ECUADOR</b></p>
-    </div>
-    <div class="informacion_ministerio">
-      Av. República de el Salvador N34-138 y Suiza<br/>
-      Quito - Ecuador<br/>
-      Teléfono: 593-2 3814000<br/>
-    </div>
-    <div class="redes_sociales">
-      <ul class="lista_redes_sociales">
-        <li>
-          <a href="https://twitter.com/@MinTrabajoEc"><img [src] = "twiter" alt="Icono de Twiter" title="twitter del ministerio de Trabajo"></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/MinTrabajoEcuador"><img [src] = "facebook" alt="Icono de facebook" title="facebook del ministerio de Trabajo"></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/channel/UC7GveeSRAD04k_6eCht6fZA"><img [src] = "youtube" alt="Icono de youtube" title="youtube del ministerio de Trabajo"></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/mintrabajoecuador/"><img [src] = "instagram" alt="Icono de instagram" title="instagram del ministerio de Trabajo"></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
+  <app-footer></app-footer>
 </footer>
 </body>
 </html>
