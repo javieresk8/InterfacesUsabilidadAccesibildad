@@ -10,7 +10,7 @@ footer{
   height: 150px;
   background: #991F25;
   box-sizing: border-box;
-  
+
 
 
 }
@@ -62,4 +62,7 @@ lista_redes_sociales{
 a {
 
   text-decoration:none;
+}
+div:focus {
+  font-weight: bold;
 }

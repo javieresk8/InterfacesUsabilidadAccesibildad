@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  logo_gobierno_encuentro = "https://o.remove.bg/downloads/ee509f60-089d-40c9-9949-0431750e9a26/GOBIERNO-DEL-ENCUENTRO-768x274-removebg-preview.png"
-  logo_bicentenario = "https://o.remove.bg/downloads/d7fe002d-52ab-4a56-b58e-9c25c7bb2e80/imagen_bicentenario-removebg-preview.png"
+  logo_gobierno_encuentro = "https://o.remove.bg/downloads/744f4064-366d-4b69-91e0-e7c8cd99703c/logo1-removebg-preview.png"
+  logo_bicentenario = "https://o.remove.bg/downloads/2de04270-e3ae-4914-be2a-a041273c7eaf/logo_2-removebg-preview.png"
   showFiller = false;
   constructor() { }
 

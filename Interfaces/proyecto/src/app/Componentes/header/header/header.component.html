@@ -1,15 +1,15 @@
-<div class="header_principal">
-  <div class="logo_gobierno">
-    <img [src]=logo_gobierno_encuentro alt="logo de representacion del gobierno del encuentro Ecuador">
+<div class="header_principal" tabindex="1">
+  <div class="logo_gobierno" >
+    <img tabindex="2" [src]=logo_gobierno_encuentro alt="logo de representacion del gobierno del encuentro Ecuador">
   </div>
-  <div class="ministerio_trabajo">
-    <h2><b>MINISTERIO DEL TRABAJO</b></h2>
+  <div class="ministerio_trabajo" >
+    <h2 tabindex="1"><b>MINISTERIO DEL TRABAJO</b></h2>
   </div>
-  <div class="logo_bicentenario">
-    <img [src]=logo_bicentenario alt="logo de representación del bicentenario del Ecuador" title="logo del bicentenario del Ecuador">
+  <div class="logo_bicentenario" >
+    <img tabindex="3" [src]=logo_bicentenario alt="logo de representación del bicentenario del Ecuador" title="logo del bicentenario del Ecuador">
   </div>
   <div class="menu_hamburguesa">
-    <button  class="btn"  mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <button tabindex="4"  class="btn"  mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
@@ -31,18 +31,18 @@
   <div class="informacion_ministerio_trabajo">
     <ul class="lista_tramites">
       <li>
-        <a href="https://www.trabajo.gob.ec/sistema-contacto-ciudadano-mantenimiento/"><b>Contacto Ciudadano</b></a>
+        <a href="https://www.trabajo.gob.ec/sistema-contacto-ciudadano-mantenimiento/" tabindex="5" ><b>Contacto Ciudadano</b></a>
       </li>
       <li>
-        <a href="https://www.gob.ec/"><b>Portal Trámites Ciudadanos</b></a>
+        <a href="https://www.gob.ec/" tabindex="5" ><b>Portal Trámites Ciudadanos</b></a>
       </li>
       <li>
-        <a href="https://sni.gob.ec/inicio"><b>Sistema Nacional de Información (SNI)</b></a>
+        <a href="https://sni.gob.ec/inicio" tabindex="5" ><b>Sistema Nacional de Información (SNI)</b></a>
       </li>
     </ul>
   </div>
-  <div class="buscar_noticias">
-    <label style="color: #CCCCCC">Buscar:<input type="text" class="input_buscar" id="fname" name="buscar" placeholder="Noticia"></label>
-    <input type="submit" value="Buscar">
+  <div class="buscar_noticias" >
+    <label style="color: #CCCCCC">Buscar:<input tabindex="6"  type="text" class="input_buscar" id="fname" name="buscar" placeholder="Noticia"></label>
+    <input type="submit" value="Buscar "tabindex="6" >
   </div>
 </div>
