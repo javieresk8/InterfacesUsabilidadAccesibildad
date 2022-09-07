@@ -20,7 +20,24 @@
       <img [src]=logo_bicentenario alt="logo de representación del bicentenario del Ecuador" title="logo del bicentenario del Ecuador">
     </div>
     <div class="menu_hamburguesa">
-
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+        <button mat-menu-item routerLink="entrada">
+          <mat-icon>input</mat-icon>
+          <span>Entrada</span>
+        </button>
+        <button mat-menu-item routerLink="salida">
+          <mat-icon>output</mat-icon>
+          <span>Salida</span>
+        </button>
+        <router-outlet></router-outlet>
+      </mat-menu>
     </div>
     <div class="informacion_ministerio_trabajo">
       <ul class="lista_tramites">
