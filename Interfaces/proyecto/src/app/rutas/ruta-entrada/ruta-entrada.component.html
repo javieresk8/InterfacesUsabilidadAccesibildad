@@ -90,17 +90,19 @@
       <form action="" class="shadow  p-3 mb-5 bg-body rounded">
         <div class="row">
           <div class="col-6">
+            <label for="nombre">Nombre</label>
             <mat-form-field class="w-100" appearance="fill">
               <mat-label>Nombre</mat-label>
-              <input type="text" matInput
+              <input type="text" matInput id="nombre"
                     placeholder="Ej. Juan Rodriguez">
 
             </mat-form-field>
           </div>
           <div class="col-6">
+            <label for="correo">Correo electrónico</label>
             <mat-form-field class="w-100" appearance="fill">
               <mat-label>Correo electrónico</mat-label>
-              <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+              <input type="email" matInput id="correo" [formControl]="emailFormControl" [errorStateMatcher]="matcher"
                     placeholder="Ej. juan@ejemplo.com">
               <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                 Por favor ingrese un correo válido
@@ -114,18 +116,20 @@
         </div>
         <div class="row">
           <div class="col-12">
+            <label for="sitioweb">Sitio Web</label>
             <mat-form-field class="w-100" appearance="fill">
               <mat-label>Sitio Web</mat-label>
-              <input type="text" matInput
+              <input type="text" matInput id="sitioweb"
                     placeholder="Ej. sitiodejuan.com">
             </mat-form-field>
           </div>
         </div>
         <div class="row">
           <div class="col-12 ">
+            <label for="comentario">Comentario</label>
             <mat-form-field class="w-100" appearance="fill">
               <mat-label>Escribe tu comentario</mat-label>
-              <textarea matInput placeholder="Ej. Mi comentario es..."></textarea>
+              <textarea matInput id="comentario" placeholder="Ej. Mi comentario es..."></textarea>
             </mat-form-field>
           </div>
         </div>
