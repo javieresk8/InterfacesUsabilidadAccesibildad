@@ -14,7 +14,7 @@ import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
-
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import {MatDividerModule} from '@angular/material/divider';
     ReactiveFormsModule,
     FormsModule,
     MatCheckboxModule,
-    MatDividerModule
+    MatDividerModule,
+    MdbCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
