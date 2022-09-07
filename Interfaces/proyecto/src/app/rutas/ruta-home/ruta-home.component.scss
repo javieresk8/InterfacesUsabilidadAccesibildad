@@ -1,3 +1,15 @@
+ngb-carousel .wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 55%; /* Keep ratio for 900x500 images */
+}
+ngb-carousel .wrapper>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 //------------------------------------------------header------------------------------------
 .header{
     width: 100%;
@@ -151,9 +163,7 @@
     padding-left: 70px;
     box-sizing: border-box;
   }
-  .noticias p{
-  
-  }
+
   .imagen_noticia{
     float: left;
     margin-top: 1.5% ;
@@ -230,11 +240,7 @@
   }
   
   //---------------------------------------------footer =-----------------------------------------
-  footer{
-    width: 100%;
-    position:fixed;
-    bottom:0px;
-  }
+
   .footer_principal{
   
     width: 100%;

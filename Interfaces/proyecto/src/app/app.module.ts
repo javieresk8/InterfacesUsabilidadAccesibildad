@@ -16,7 +16,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import {BreadcrumbSalidaModule} from "./Componentes/header/breadcrumb-salida/breadcrumb-salida.module";
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +36,8 @@ import {BreadcrumbSalidaModule} from "./Componentes/header/breadcrumb-salida/bre
         MatCheckboxModule,
         MatDividerModule,
         MdbCarouselModule,
-        BreadcrumbSalidaModule
+        BreadcrumbSalidaModule,
+        NgbModule
     ],
   providers: [],
   bootstrap: [AppComponent]
