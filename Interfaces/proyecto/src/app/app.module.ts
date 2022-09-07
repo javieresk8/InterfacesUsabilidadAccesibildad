@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import {BreadcrumbSalidaModule} from "./Componentes/header/breadcrumb-salida/breadcrumb-salida.module";
 
 @NgModule({
   declarations: [
@@ -23,19 +24,20 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     RutaSalidaComponent,
     RutaHomeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FooterModule,
-    HeaderModule,
-    NoopAnimationsModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    FormsModule,
-    MatCheckboxModule,
-    MatDividerModule,
-    MdbCarouselModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FooterModule,
+        HeaderModule,
+        NoopAnimationsModule,
+        MatInputModule,
+        ReactiveFormsModule,
+        FormsModule,
+        MatCheckboxModule,
+        MatDividerModule,
+        MdbCarouselModule,
+        BreadcrumbSalidaModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

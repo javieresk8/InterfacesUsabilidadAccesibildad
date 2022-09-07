@@ -3,14 +3,13 @@
     <img [src]=logo_gobierno_encuentro>
   </div>
   <div class="ministerio_trabajo">
-    <p><b>MINISTERIO DEL TRABAJO</b></p>
+    <h2><b>MINISTERIO DEL TRABAJO</b></h2>
   </div>
   <div class="logo_bicentenario">
-    <img [src]=logo_bicentenario>
+    <img [src]=logo_bicentenario alt="logo de representación del bicentenario del Ecuador" title="logo del bicentenario del Ecuador">
   </div>
-  
   <div class="menu_hamburguesa">
-    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <button  class="btn"  mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
@@ -28,7 +27,6 @@
       </button>
       <router-outlet></router-outlet>
     </mat-menu>
-
   </div>
   <div class="informacion_ministerio_trabajo">
     <ul class="lista_tramites">
@@ -44,7 +42,7 @@
     </ul>
   </div>
   <div class="buscar_noticias">
-    <input type="text" class="input_buscar" id="fname" name="buscar" placeholder="Buscar Noticias">
+    <label>Buscar:<input type="text" class="input_buscar" id="fname" name="buscar" placeholder="Noticia"></label>
     <input type="submit" value="Buscar">
   </div>
 </div>
